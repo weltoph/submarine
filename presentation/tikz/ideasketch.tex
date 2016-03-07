@@ -1,0 +1,74 @@
+\begin{tikzpicture}
+	\draw[
+		decoration={
+			snake,
+			amplitude=0.8mm,
+			segment length=6mm
+		},
+		fill=blue
+	] decorate {(10,6) -- (0,6)} -- (0,0) -- (10,0) -- (10,6);
+	\draw[
+		line width=0.25cm
+	] (10,8) -- (10,0) -- (0,0) -- (0,8);
+	\draw[
+		color=gray,
+		fill=gray,
+		line width=0.1cm
+	] (1,2) -- (3,2) -- (3,3) -- (1,3) -- (1,2);
+	\draw[
+		color=black,
+		line width=0.15cm
+	] (11,7) -- (11.5,8) -- (12,7);
+	\draw[
+		color=black,
+		line width=0.15cm
+	] (11.5,8) -- (11.5,10.5);
+	\draw[
+		color=black,
+		line width=0.15cm
+	] (11.5, 9.5) -- (10, 10);
+	\draw[
+		color=black,
+		line width=0.15cm
+	] (11.5, 9.5) -- (13, 10);
+	\node[
+		circle,
+		draw,
+		minimum width=1.5cm,
+		inner sep=0pt
+	] (head) at (11.5, 11.3) {};
+	\draw[
+		color=gray,
+		line width=0.12cm
+	] (9.9,9.75) -- (9.9,10.25) -- (9.68,10.25) -- (9.68, 9.75) -- (9.9,9.75);
+	\draw[
+		color=gray,
+		line width=0.1cm,
+		fill=gray,
+		opacity=0.4,
+		dashed
+	] (1,5.5) -- (3,5.5) -- (3,6.5) -- (1,6.5) -- (1,5.5);
+	\draw[
+		<->,
+		line width=0.15cm,
+		color=gray
+	] (2,5) -- (2,3.5);
+	\draw[
+		color=green,
+		line width=0.05
+	] (2.6,8) arc (70:0:2cm);
+	\draw[
+		color=green,
+		line width=0.05
+	] (2.6,9.1) arc (80:-3:3cm);
+	\draw[
+		color=green,
+		line width=0.05
+	] (6.4,10) arc (80:-6:3cm);
+	\draw[
+		color=green,
+		line width=0.05
+	] (8,10) arc (70:2:2cm);
+
+
+\end{tikzpicture}
