@@ -1,4 +1,5 @@
 \documentclass{beamer}
+\usepackage{color}
 \usepackage{xcolor}
 \usepackage{graphicx}
 \usepackage{tikz}
@@ -62,18 +63,18 @@
 		\end{center}
 	\end{frame}
 
-	\begin{frame}[t]{Dive Tank}
+	\begin{frame}[t]{Dive Tank I}
 		\begin{columns}[T]
 			\begin{column}{0.5\textwidth}
 				\begin{minipage}{\textwidth}
 					\resizebox{0.9\textwidth}{!}{\input{tikz/subsketchnodesc.tex}}
 				\end{minipage}
 				\begin{minipage}{\textwidth}
-					\vspace{1cm}
+					\vspace{0.5cm}
 					\begin{itemize}
-						\item countersink nut into plunge
+						\item countersink nut into plunger
 						\item translate rotation of threaded rod to lifting motion
-						\item[$\Rightarrow$] compact design
+						\item[$\Rightarrow$] compact design\uncover<2>{,\textcolor{red}{ but unfortunatly leaky}}
 					\end{itemize}
 				\end{minipage}
 			\end{column}
@@ -84,4 +85,107 @@
 			\end{column}
 		\end{columns}
 	\end{frame}
+
+	\begin{frame}[t]{Dive Tank II}
+		\begin{columns}[T]
+			\begin{column}{0.5\textwidth}
+				\begin{minipage}{\textwidth}
+					\resizebox{0.9\textwidth}{!}{\input{tikz/subsketchnodesc.tex}}
+				\end{minipage}
+				\begin{minipage}{\textwidth}
+					\vspace{0.5cm}
+					\begin{itemize}
+						\item move nut to end of plunger
+							\begin{itemize}
+								\item[$\Rightarrow$] leave seal intact
+							\end{itemize}
+						\item not as compact\uncover<2>{, but leak-free}
+					\end{itemize}
+				\end{minipage}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\begin{center}
+					\resizebox{0.37\textwidth}{!}{\includegraphics{pic/second-divetank}}
+				\end{center}
+			\end{column}
+		\end{columns}
+	\end{frame}
+
+	\begin{frame}[t]{Sensors}
+		\begin{columns}[T]
+			\begin{column}{0.5\textwidth}
+				\begin{minipage}{\textwidth}
+					\resizebox{0.9\textwidth}{!}{\input{tikz/subsketchnodesc.tex}}
+				\end{minipage}
+				\begin{minipage}{\textwidth}
+					\vspace{0.5cm}
+					\begin{itemize}
+						\item pressure
+							\begin{itemize}
+								\item correlates with depth
+								\item[$\Rightarrow$] can be used as reference quantity
+							\end{itemize}
+						\item temperature
+						\item there are many more pins available\dots
+					\end{itemize}
+				\end{minipage}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\resizebox{0.8\textwidth}{!}{\includegraphics{pic/sensors-front}}
+				\resizebox{0.8\textwidth}{!}{\includegraphics{pic/sensors-side}}
+			\end{column}
+		\end{columns}
+	\end{frame}
+
+	\begin{frame}[t]{Arduino}
+		\begin{columns}[T]
+			\begin{column}{0.5\textwidth}
+				\begin{minipage}{\textwidth}
+					\resizebox{0.9\textwidth}{!}{\input{tikz/subsketchnodesc.tex}}
+				\end{minipage}
+				\begin{minipage}{\textwidth}
+					\vspace{0.5cm}
+					\begin{itemize}
+						\item Arduino Uno
+							\begin{itemize}
+								\item only very limited storage capabilities
+								\item cannot store much data
+							\end{itemize}
+						\item Arduino Mega\footnote{Picture taken from: https://commons.wikimedia.org/wiki/File:Arduino\_Mega.jpg}
+							\begin{itemize}
+								\item more space for data
+								\item paid for in physical space
+							\end{itemize}
+					\end{itemize}
+				\end{minipage}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\resizebox{0.9\textwidth}{!}{\includegraphics{pic/ardu-uno}}
+				\resizebox{0.9\textwidth}{!}{\includegraphics{pic/ardu-mega}}
+			\end{column}
+		\end{columns}
+	\end{frame}
+
+	\begin{frame}[t]{Wires}
+		\begin{columns}[T]
+			\begin{column}{0.5\textwidth}
+				\begin{minipage}{\textwidth}
+					\resizebox{0.9\textwidth}{!}{\input{tikz/subsketchnodesc.tex}}
+				\end{minipage}
+				\begin{minipage}{\textwidth}
+					\vspace{0.5cm}
+					\begin{itemize}
+						\item limited space
+						\item power supply for all sensors
+						\item[$\Rightarrow$] very monolithic wiring
+					\end{itemize}
+				\end{minipage}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\resizebox{0.9\textwidth}{!}{\includegraphics{pic/wires}}
+			\end{column}
+		\end{columns}
+	\end{frame}
+
+
 \end{document}
