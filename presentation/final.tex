@@ -253,6 +253,108 @@
 			\end{tabular}
 		\end{center}
 	\end{frame}
+	
+	\section{Software}
+	\begin{frame}{Software -- Arduino}
+		\vspace{0.7cm}
+		\centering{
+			\includegraphics[width=4cm]{pic/arduino_logo.png}
+		}
+		\vspace{0.7cm}
+		\begin{alertblock}{Why Arduino and not something homebrewed?}
+			\begin{itemize}
+				\item Lots of libraries available
+				\item Good documentation for connect and access hardware
+				\item Easy to start with
+			\end{itemize}
+		\end{alertblock}
+	\end{frame}
+	
+	\begin{frame}[t]{Software -- Arduino}
+		\begin{alertblock}{Software requirements}
+			\vspace{0.3cm}
+			\begin{columns}[T]
+				\column{0.33\textwidth}
+					\begin{itemize}
+						\item Modular
+					\end{itemize}
+					\hspace{0.5cm}{\small Adding sensors, adaptable protocol}
+				\column{0.33\textwidth}
+					\begin{itemize}
+						\item Maintainable for further development
+					\end{itemize}
+				\column{0.33\textwidth}
+					\begin{itemize}
+						\item Memory-efficient
+					\end{itemize}
+			\end{columns}
+		\end{alertblock}
+		\only<2>{
+			\begin{center}
+				\includegraphics[width=6cm]{pic/submarine_states.png}
+			\end{center}	
+		}
+		\only<3>{
+			\begin{center}
+				\includegraphics[width=9cm]{pic/arduino_code_overview.pdf}
+			\end{center}
+		}
+	\end{frame}
+	
+	\begin{frame}{Software -- Android App}
+		\begin{columns}
+			\column{0.5\textwidth}
+				\begin{alertblock}{How to design and write an app?}
+					\begin{enumerate}
+						\item \alert<2>{Think}
+						\item \alert<3>{Design}
+						\item \alert<4>{Implement}
+						\item \alert<5>{Analyze}
+					\end{enumerate}
+				\end{alertblock}
+			\column{0.5\textwidth}
+			\only<1>{
+				\includegraphics[width=5cm]{pic/android.jpg}
+			}
+			\only<2>{
+				\includegraphics[width=5cm]{pic/app/app_sketching.jpg}	
+			}
+			\only<3>{
+				\includegraphics[width=1.5cm]{pic/app/01.png}
+				\includegraphics[width=1.5cm]{pic/app/02.png}
+				\includegraphics[width=1.5cm]{pic/app/03.png}\\
+				\hspace{0.13cm}
+				\includegraphics[width=1.5cm]{pic/app/04.png}
+				\includegraphics[width=1.5cm]{pic/app/05.png}
+				\includegraphics[width=1.5cm]{pic/app/06.png}
+			}
+			\only<4>{
+				\includegraphics[width=1.4cm]{pic/bluetooth.png}\\
+				\includegraphics[width=5cm]{pic/chart_logo.png}
+			}
+			\only<5>{
+				\includegraphics[width=5cm]{pic/spiderman.jpg}
+			}
+		\end{columns}		
+	\end{frame}
+	
+	\begin{frame}{Communication}
+		\begin{columns}
+			\column{0.45\textwidth}
+				\begin{center}
+					\includegraphics[width=2.5cm]{pic/communication.png}
+				\end{center}
+			\column{0.1\textwidth}
+				{\Huge{+}}
+			\column{0.45\textwidth}
+				\begin{center}
+					\includegraphics[width=3cm]{pic/google.jpg}\\
+					\includegraphics[width=3cm]{pic/protobuf.png}
+					\vspace{0.7cm}
+					\includegraphics[width=2cm]{pic/nanopb.png}
+				\end{center}
+		\end{columns}
+	\end{frame}
 
 	\section{Future Ideas}
 	\begin{frame}{Future Ideas}
@@ -284,10 +386,10 @@
 		\begin{mdframed}
 			\begin{center}
 				Keep up with the submarine project on\\
-				http://voltidioten.westhofen.info/
+				\url{http://voltidioten.westhofen.info/}
 			\end{center}
 		\end{mdframed}
-		\let\thefootnote\relax\footnote{further reference: https://hackaday.io/list/7359-waterborne-projects}
+		\let\thefootnote\relax\footnote{\url{https://hackaday.io/list/7359-waterborne-projects}}
 	\end{frame}
 
 	\begin{frame}{Acknowledgments}
