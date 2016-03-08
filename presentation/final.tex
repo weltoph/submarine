@@ -1,4 +1,5 @@
 \documentclass{beamer}
+\usepackage{eurosym}
 \usepackage{color}
 \usepackage{xcolor}
 \usepackage{graphicx}
@@ -187,5 +188,110 @@
 		\end{columns}
 	\end{frame}
 
+	\begin{frame}[t]{Hull}
+		\begin{columns}[T]
+			\begin{column}{0.5\textwidth}
+				\begin{minipage}{\textwidth}
+					\resizebox{0.9\textwidth}{!}{\input{tikz/subsketchnodesc.tex}}
+				\end{minipage}
+				\begin{minipage}{\textwidth}
+					\vspace{0.5cm}
+					\begin{itemize}
+						\item PVC pipe
+						\item commonly used for fluids
+							\begin{itemize}
+								\item modular
+								\item equipped with seals
+								\item leakproof
+							\end{itemize}
+					\end{itemize}
+				\end{minipage}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\begin{center}
+					\resizebox{0.3\textwidth}{!}{\includegraphics{pic/pvchull}}
+				\end{center}
+			\end{column}
+		\end{columns}
+	\end{frame}
+
+	\begin{frame}{Challenges}
+		\begin{columns}
+			\column{0.5\textwidth}
+				\begin{itemize}
+					\item capacity of diving tank
+						\begin{itemize}
+							\item around 3\% of actual volume
+							\item[$\Rightarrow$] very difficult to tare
+						\end{itemize}
+				\end{itemize}
+			\column{0.5\textwidth}
+				\begin{itemize}
+					\item construction of diving tank
+						\begin{itemize}
+							\item leakproof all moving parts
+						\end{itemize}
+					\item permanently attach things to PVC hull
+					\item leakproof all outgoing parts
+				\end{itemize}
+		\end{columns}
+	\end{frame}
+	
+	\begin{frame}{Expenses}
+		\begin{center}
+			\begin{tabular}{|lr|}
+				\hline
+				Item & Expense \\\hline
+				PVC Hull & \euro{10}\\
+				Stepper & \euro{20}\\
+				Threaded Rod, Wave-Coupling, Nuts & \euro{10}\\
+				Stepper Driver & \euro{ 4}\\
+				Arduino Mega & \euro{20}\\\hline
+				$\Sigma$ & \euro{54}\\
+				\hline
+			\end{tabular}
+		\end{center}
+	\end{frame}
+
+	\section{Future Ideas}
+	\begin{frame}{Future Ideas}
+		\begin{columns}
+			\column{0.5\textwidth}
+			\begin{itemize}
+				\item modularize
+					\begin{itemize}
+						\item communication topology for sensors
+						\item power bus for sensors
+					\end{itemize}
+				\item underwater sensor networks
+					\begin{itemize}
+						\item under-water communication
+						\item measuring boxes
+					\end{itemize}
+			\end{itemize}
+			\column{0.5\textwidth}
+			\begin{itemize}
+				\item autonomize
+					\begin{itemize}
+						\item wireless charging
+						\item wireless software updates
+						\item common interface to add sensors in self containing hulls
+					\end{itemize}
+				\item add drive
+			\end{itemize}
+		\end{columns}
+		\let\thefootnote\relax\footnote{further reference: https://hackaday.io/list/7359-waterborne-projects}
+	\end{frame}
+
+	\begin{frame}{Acknowledgments}
+		\begin{center}
+			We want to thank some fellow submarine constructors, namely:
+		\end{center}
+		\begin{itemize}
+			\item Thomas Welzel
+			\item Martin Welzel
+			\item Winfried Harking
+		\end{itemize}
+	\end{frame}
 
 \end{document}
