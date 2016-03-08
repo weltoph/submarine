@@ -1,3 +1,9 @@
 [submodule "mtheme"]
 	path = mtheme
 	url = https://github.com/matze/mtheme
+[submodule "submarine-arduino"]
+	path = submarine-arduino
+	url = https://github.com/lu-w/submarine-arduino
+[submodule "submarine-control"]
+	path = submarine-control
+	url = https://github.com/lu-w/submarine-control
